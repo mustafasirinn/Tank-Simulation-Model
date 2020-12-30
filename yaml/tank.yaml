@@ -1,0 +1,1492 @@
+# YAML dump of robot model 'tank', 20201230_03:35
+# created with Phobos 1.0.1 "Capricious Choutengan" - https://github.com/dfki-ric/phobos
+
+chains: {}
+controllers: {}
+date: '20201230_03:35'
+description: ''
+groups: {}
+joints:
+  namlu:
+    child: namlu
+    name: namlu
+    parent: silah_bolumu
+    passive: true
+    pose:
+      matrix:
+      - - -1.0
+        - 0
+        - 0
+        - 0.06438
+      - - 0
+        - -1.0
+        - 0
+        - 1.42959
+      - - 0
+        - 0
+        - 1.0
+        - 0.39772
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 0
+      - 0
+      - 3.14159
+      rotation_quaternion:
+      - 0
+      - 0
+      - 0
+      - 1.0
+      translation:
+      - 0.06438
+      - 1.42959
+      - 0.39772
+    type: fixed
+  sag_palet:
+    axis:
+    - 0
+    - 0
+    - 1.0
+    child: sag_palet
+    limits:
+      effort: 4.38
+      velocity: 2.07
+    name: sag_palet
+    parent: govde
+    pose:
+      matrix:
+      - - 0
+        - 0
+        - -1.0
+        - -1.04
+      - - -1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.59379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 1.5708
+      - 0
+      - -1.5708
+      rotation_quaternion:
+      - 0.5
+      - 0.5
+      - -0.5
+      - -0.5
+      translation:
+      - -1.04
+      - 0
+      - -0.59379
+    type: continuous
+  sag_teker:
+    axis:
+    - 0
+    - 0
+    - 1.0
+    child: sag_teker
+    limits:
+      effort: 4.38
+      velocity: 2.07
+    name: sag_teker
+    parent: govde
+    pose:
+      matrix:
+      - - 0
+        - 0
+        - -1.0
+        - -1.04
+      - - -1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.59379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 1.5708
+      - 0
+      - -1.5708
+      rotation_quaternion:
+      - 0.5
+      - 0.5
+      - -0.5
+      - -0.5
+      translation:
+      - -1.04
+      - 0
+      - -0.59379
+    type: continuous
+  silah_bolumu:
+    axis:
+    - 0
+    - 0
+    - 1.0
+    child: silah_bolumu
+    limits:
+      effort: 2.4
+      lower: -1.08
+      upper: 1.08
+      velocity: 1.02
+    name: silah_bolumu
+    parent: govde
+    pose:
+      matrix:
+      - - 1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.22787
+      - - 0
+        - 0
+        - 1.0
+        - 0.8333
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 0
+      - 0
+      - 0
+      rotation_quaternion:
+      - 1.0
+      - 0
+      - 0
+      - 0
+      translation:
+      - 0
+      - -0.22787
+      - 0.8333
+    type: revolute
+  sol_palet:
+    axis:
+    - 0
+    - 0
+    - 1.0
+    child: sol_palet
+    limits:
+      effort: 4.38
+      velocity: 2.07
+    name: sol_palet
+    parent: govde
+    pose:
+      matrix:
+      - - 0
+        - 0
+        - 1.0
+        - 1.04
+      - - 1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.59379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 1.5708
+      - 0
+      - 1.57079
+      rotation_quaternion:
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      translation:
+      - 1.04
+      - 0
+      - -0.59379
+    type: continuous
+  sol_teker:
+    axis:
+    - 0
+    - 0
+    - 1.0
+    child: sol_teker
+    limits:
+      effort: 4.38
+      velocity: 2.07
+    name: sol_teker
+    parent: govde
+    pose:
+      matrix:
+      - - 0
+        - 0
+        - 1.0
+        - 1.04
+      - - 1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.59379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 1.5708
+      - 0
+      - 1.57079
+      rotation_quaternion:
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      translation:
+      - 1.04
+      - 0
+      - -0.59379
+    type: continuous
+lights: {}
+links:
+  govde:
+    approxcollision: []
+    children:
+    - sag_palet
+    - sag_teker
+    - silah_bolumu
+    - sol_palet
+    - sol_teker
+    collision:
+      Hull:
+        geometry:
+          size:
+          - 3.75521
+          - 7.42093
+          - 1.62842
+          type: box
+        name: Hull
+        pose:
+          matrix:
+          - - 1.0
+            - 0
+            - 0
+            - 0.00268
+          - - 0
+            - 1.0
+            - 0
+            - -0.26888
+          - - 0
+            - 0
+            - 1.0
+            - 0.28422
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - 0
+          - 0
+          - 0
+          rotation_quaternion:
+          - 1.0
+          - 0
+          - 0
+          - 0
+          translation:
+          - 0.00268
+          - -0.26888
+          - 0.28422
+    collision_bitmask: 0
+    inertial:
+      inertia:
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - &id001 !!python/object/apply:numpy.dtype
+          args:
+          - f8
+          - 0
+          - 1
+          state: !!python/tuple
+          - 3
+          - <
+          - null
+          - null
+          - null
+          - -1
+          - -1
+          - 0
+        - !!binary |
+          rwj+t5LRQUA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          kZvhBnx+eL8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          Iv32deCckT8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          DhDM0eNHI0A=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          g/qWOV0W8L8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          dF5jl6g2RUA=
+      mass: 9.511
+      pose:
+        rotation_euler:
+        - 0
+        - 0
+        - 0
+        translation:
+        - 0
+        - 0
+        - 0
+    name: govde
+    object: !!python/object:bpy_types.Object {}
+    parent: null
+    parentobj: null
+    pose:
+      matrix:
+      - - -1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - -1.0
+        - 0
+        - 0
+      - - 0
+        - 0
+        - 1.0
+        - 1.06379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 0
+      - 0
+      - -3.14159
+      rotation_quaternion:
+      - 0
+      - 0
+      - 0
+      - 1.0
+      translation:
+      - 0
+      - 0
+      - 1.06379
+    visual:
+      Hull:
+        geometry:
+          filename: Object_1.001
+          scale:
+          - 1.0
+          - 1.0
+          - 1.0
+          size:
+          - 3.75521
+          - 7.42093
+          - 1.62842
+          type: mesh
+        material: Material_1.003
+        name: Hull
+        pose:
+          matrix:
+          - - 1.0
+            - 0
+            - 0
+            - 0
+          - - 0
+            - 1.0
+            - 0
+            - 0
+          - - 0
+            - 0
+            - 1.0
+            - 0
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - 0
+          - 0
+          - 0
+          rotation_quaternion:
+          - 1.0
+          - 0
+          - 0
+          - 0
+          translation:
+          - 0
+          - 0
+          - 0
+  namlu:
+    approxcollision: []
+    children: []
+    collision:
+      Gun:
+        geometry:
+          length: 6.41957
+          radius: 0.37102
+          type: cylinder
+        name: Gun
+        pose:
+          matrix:
+          - - 1.0
+            - 0
+            - 0
+            - 0
+          - - 0
+            - 0
+            - -1.0
+            - -3.23505
+          - - 0
+            - 1.0
+            - 0
+            - -0.01206
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - 1.5708
+          - 0
+          - 0
+          rotation_quaternion:
+          - 0.70711
+          - 0.70711
+          - 0
+          - 0
+          translation:
+          - 0
+          - -3.23505
+          - -0.01206
+    collision_bitmask: 0
+    inertial:
+      inertia:
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          jWK5pdX4Y0A=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          jkC8rl+wW78=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          zHoxlBPt1L8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          f6SIDKt4wz8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          93XgnBGl5r8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          wLLSpBT5Y0A=
+      mass: 9.511
+      pose:
+        rotation_euler:
+        - 0
+        - 0
+        - 0
+        translation:
+        - 0
+        - 0
+        - 0
+    name: namlu
+    object: !!python/object:bpy_types.Object {}
+    parent: silah_bolumu
+    parentobj: !!python/object:bpy_types.Object {}
+    pose:
+      matrix:
+      - - -1.0
+        - 0
+        - 0
+        - 0.06438
+      - - 0
+        - -1.0
+        - 0
+        - 1.42959
+      - - 0
+        - 0
+        - 1.0
+        - 0.39772
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 0
+      - 0
+      - 3.14159
+      rotation_quaternion:
+      - 0
+      - 0
+      - 0
+      - 1.0
+      translation:
+      - 0.06438
+      - 1.42959
+      - 0.39772
+    visual:
+      Gun:
+        geometry:
+          filename: Object_1.003
+          scale:
+          - 1.0
+          - 1.0
+          - 1.0
+          size:
+          - 0.74203
+          - 6.41957
+          - 0.64898
+          type: mesh
+        material: Material_1.003
+        name: Gun
+        pose:
+          matrix:
+          - - 1.0
+            - 0
+            - 0
+            - 0
+          - - 0
+            - 1.0
+            - 0
+            - 0
+          - - 0
+            - 0
+            - 1.0
+            - 0
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - 0
+          - 0
+          - 0
+          rotation_quaternion:
+          - 1.0
+          - 0
+          - 0
+          - 0
+          translation:
+          - 0
+          - 0
+          - 0
+  sag_palet:
+    approxcollision: []
+    children: []
+    collision:
+      Track_Left:
+        geometry:
+          size:
+          - 0.78867
+          - 6.60592
+          - 1.38052
+          type: box
+        name: Track_Left
+        pose:
+          matrix:
+          - - 0
+            - 1.0
+            - 0
+            - -0.03436
+          - - 0
+            - 0
+            - 1.0
+            - 0.21523
+          - - 1.0
+            - 0
+            - 0
+            - 0.39328
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - -1.5708
+          - -1.5708
+          - 0
+          rotation_quaternion:
+          - 0.5
+          - -0.5
+          - -0.5
+          - -0.5
+          translation:
+          - -0.03436
+          - 0.21523
+          - 0.39328
+    collision_bitmask: 0
+    inertial:
+      inertia:
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          0ETY8PQCMEA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          tHHEWnyK9D8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          vMtFfCfGGMA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          QlvOpbhKRUA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          FZFhFW9k7z8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          X0GasWhuQUA=
+      mass: 9.511
+      pose:
+        rotation_euler:
+        - 0
+        - 0
+        - 0
+        translation:
+        - 0
+        - -0.47
+        - -1.04
+    name: sag_palet
+    object: !!python/object:bpy_types.Object {}
+    parent: govde
+    parentobj: !!python/object:bpy_types.Object {}
+    pose:
+      matrix:
+      - - 0
+        - 0
+        - -1.0
+        - -1.04
+      - - -1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.59379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 1.5708
+      - 0
+      - -1.5708
+      rotation_quaternion:
+      - 0.5
+      - 0.5
+      - -0.5
+      - -0.5
+      translation:
+      - -1.04
+      - 0
+      - -0.59379
+    visual:
+      Track_Left:
+        geometry:
+          filename: Object_1
+          scale:
+          - 1.0
+          - 1.0
+          - 1.0
+          size:
+          - 0.78867
+          - 6.60592
+          - 1.38052
+          type: mesh
+        material: Material_1
+        name: Track_Left
+        pose:
+          matrix:
+          - - 0
+            - 1.0
+            - 0
+            - 0
+          - - 0
+            - 0
+            - 1.0
+            - -0.47
+          - - 1.0
+            - 0
+            - 0
+            - -1.04
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - -1.5708
+          - -1.5708
+          - 0
+          rotation_quaternion:
+          - 0.5
+          - -0.5
+          - -0.5
+          - -0.5
+          translation:
+          - 0
+          - -0.47
+          - -1.04
+  sag_teker:
+    approxcollision: []
+    children: []
+    collision:
+      Wheels_Left:
+        geometry:
+          size:
+          - 0.73888
+          - 6.40001
+          - 1.2042
+          type: box
+        name: Wheels_Left
+        pose:
+          matrix:
+          - - 0
+            - 1.0
+            - 0
+            - -0.05636
+          - - 0
+            - 0
+            - 1.0
+            - 0.22491
+          - - 1.0
+            - 0
+            - 0
+            - 0.27566
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - -1.5708
+          - -1.5708
+          - 0
+          rotation_quaternion:
+          - 0.5
+          - -0.5
+          - -0.5
+          - -0.5
+          translation:
+          - -0.05636
+          - 0.22491
+          - 0.27566
+    collision_bitmask: 0
+    inertial:
+      inertia:
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          zemymNgMKUA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          YKsEi8OZjz8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          JGJKJNHrEcA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          AcEcPX5nP0A=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          rhIsDmd+6L8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          +fcZFw5sN0A=
+      mass: 9.511
+      pose:
+        rotation_euler:
+        - 0
+        - 0
+        - 0
+        translation:
+        - 0
+        - -0.47
+        - -1.04
+    name: sag_teker
+    object: !!python/object:bpy_types.Object {}
+    parent: govde
+    parentobj: !!python/object:bpy_types.Object {}
+    pose:
+      matrix:
+      - - 0
+        - 0
+        - -1.0
+        - -1.04
+      - - -1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.59379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 1.5708
+      - 0
+      - -1.5708
+      rotation_quaternion:
+      - 0.5
+      - 0.5
+      - -0.5
+      - -0.5
+      translation:
+      - -1.04
+      - 0
+      - -0.59379
+    visual:
+      Wheels_Left:
+        geometry:
+          filename: Object_3
+          scale:
+          - 1.0
+          - 1.0
+          - 1.0
+          size:
+          - 0.73888
+          - 6.40001
+          - 1.2042
+          type: mesh
+        material: Material_1.003
+        name: Wheels_Left
+        pose:
+          matrix:
+          - - 0
+            - 1.0
+            - 0
+            - 0
+          - - 0
+            - 0
+            - 1.0
+            - -0.47
+          - - 1.0
+            - 0
+            - 0
+            - -1.04
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - -1.5708
+          - -1.5708
+          - 0
+          rotation_quaternion:
+          - 0.5
+          - -0.5
+          - -0.5
+          - -0.5
+          translation:
+          - 0
+          - -0.47
+          - -1.04
+  silah_bolumu:
+    approxcollision: []
+    children:
+    - namlu
+    collision:
+      Turret:
+        geometry:
+          size:
+          - 2.61723
+          - 3.78731
+          - 1.22122
+          type: box
+        name: Turret
+        pose:
+          matrix:
+          - - 1.0
+            - 0
+            - 0
+            - 0.01295
+          - - 0
+            - 1.0
+            - 0
+            - -0.28332
+          - - 0
+            - 0
+            - 1.0
+            - 0.60783
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - 0
+          - 0
+          - 0
+          rotation_quaternion:
+          - 1.0
+          - 0
+          - 0
+          - 0
+          translation:
+          - 0.01295
+          - -0.28332
+          - 0.60783
+    collision_bitmask: 0
+    inertial:
+      inertia:
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          Htydtdu+JkA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          gLdAguLHsD8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          1zTvOEVHsj8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          vK5fsBt2F0A=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          lltaDYn7+r8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          LpCg+DF2JUA=
+      mass: 9.511
+      pose:
+        rotation_euler:
+        - 0
+        - 0
+        - 0
+        translation:
+        - 0
+        - 0
+        - 0
+    name: silah_bolumu
+    object: !!python/object:bpy_types.Object {}
+    parent: govde
+    parentobj: !!python/object:bpy_types.Object {}
+    pose:
+      matrix:
+      - - 1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.22787
+      - - 0
+        - 0
+        - 1.0
+        - 0.8333
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 0
+      - 0
+      - 0
+      rotation_quaternion:
+      - 1.0
+      - 0
+      - 0
+      - 0
+      translation:
+      - 0
+      - -0.22787
+      - 0.8333
+    visual:
+      Turret:
+        geometry:
+          filename: Object_1.002
+          scale:
+          - 1.0
+          - 1.0
+          - 1.0
+          size:
+          - 2.61723
+          - 3.78731
+          - 1.22122
+          type: mesh
+        material: Material_1.003
+        name: Turret
+        pose:
+          matrix:
+          - - 1.0
+            - 0
+            - 0
+            - 0
+          - - 0
+            - 1.0
+            - 0
+            - 0
+          - - 0
+            - 0
+            - 1.0
+            - 0
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - 0
+          - 0
+          - 0
+          rotation_quaternion:
+          - 1.0
+          - 0
+          - 0
+          - 0
+          translation:
+          - 0
+          - 0
+          - 0
+  sol_palet:
+    approxcollision: []
+    children: []
+    collision:
+      Track_Right:
+        geometry:
+          size:
+          - 0.78867
+          - 6.60592
+          - 1.38052
+          type: box
+        name: Track_Right
+        pose:
+          matrix:
+          - - 0
+            - -1.0
+            - 0
+            - 0.03436
+          - - 0
+            - 0
+            - 1.0
+            - 0.21523
+          - - -1.0
+            - 0
+            - 0
+            - 0.39328
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - -1.5708
+          - 1.5708
+          - 0
+          rotation_quaternion:
+          - 0.5
+          - -0.5
+          - 0.5
+          - 0.5
+          translation:
+          - 0.03436
+          - 0.21523
+          - 0.39328
+    collision_bitmask: 0
+    inertial:
+      inertia:
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          sktUbw38L0A=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          pfeNrz2z9L8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          WYY41sWtGEA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          ceZXc4BYRUA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          0csollta8z8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          529CIQJ6QUA=
+      mass: 9.511
+      pose:
+        rotation_euler:
+        - 0
+        - 0
+        - 0
+        translation:
+        - 0
+        - -0.47
+        - -1.04
+    name: sol_palet
+    object: !!python/object:bpy_types.Object {}
+    parent: govde
+    parentobj: !!python/object:bpy_types.Object {}
+    pose:
+      matrix:
+      - - 0
+        - 0
+        - 1.0
+        - 1.04
+      - - 1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.59379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 1.5708
+      - 0
+      - 1.57079
+      rotation_quaternion:
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      translation:
+      - 1.04
+      - 0
+      - -0.59379
+    visual:
+      Track_Right:
+        geometry:
+          filename: Object_2
+          scale:
+          - 1.0
+          - 1.0
+          - 1.0
+          size:
+          - 0.78867
+          - 6.60592
+          - 1.38052
+          type: mesh
+        material: Material_1
+        name: Track_Right
+        pose:
+          matrix:
+          - - 0
+            - -1.0
+            - 0
+            - 0
+          - - 0
+            - 0
+            - 1.0
+            - -0.47
+          - - -1.0
+            - 0
+            - 0
+            - -1.04
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - -1.5708
+          - 1.5708
+          - 0
+          rotation_quaternion:
+          - 0.5
+          - -0.5
+          - 0.5
+          - 0.5
+          translation:
+          - 0
+          - -0.47
+          - -1.04
+  sol_teker:
+    approxcollision: []
+    children: []
+    collision:
+      Wheels_Right:
+        geometry:
+          size:
+          - 0.7229
+          - 6.40001
+          - 1.2042
+          type: box
+        name: Wheels_Right
+        pose:
+          matrix:
+          - - 0
+            - -1.0
+            - 0
+            - 0.05636
+          - - 0
+            - 0
+            - 1.0
+            - 0.22491
+          - - -1.0
+            - 0
+            - 0
+            - 0.27876
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - -1.5708
+          - 1.5708
+          - 0
+          rotation_quaternion:
+          - 0.5
+          - -0.5
+          - 0.5
+          - 0.5
+          translation:
+          - 0.05636
+          - 0.22491
+          - 0.27876
+    collision_bitmask: 0
+    inertial:
+      inertia:
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          wjQMHxETKUA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          iUFg5dAi478=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          tf0rK03qEUA=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          +vIC7KNTP0A=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          Iv32deCc5j8=
+      - !!python/object/apply:numpy.core.multiarray.scalar
+        - *id001
+        - !!binary |
+          p7OTwVFSN0A=
+      mass: 9.511
+      pose:
+        rotation_euler:
+        - 0
+        - 0
+        - 0
+        translation:
+        - 0
+        - -0.47
+        - -1.04
+    name: sol_teker
+    object: !!python/object:bpy_types.Object {}
+    parent: govde
+    parentobj: !!python/object:bpy_types.Object {}
+    pose:
+      matrix:
+      - - 0
+        - 0
+        - 1.0
+        - 1.04
+      - - 1.0
+        - 0
+        - 0
+        - 0
+      - - 0
+        - 1.0
+        - 0
+        - -0.59379
+      - - 0
+        - 0
+        - 0
+        - 1.0
+      rawmatrix: !!python/object:builtins.Matrix {}
+      rotation_euler:
+      - 1.5708
+      - 0
+      - 1.57079
+      rotation_quaternion:
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      translation:
+      - 1.04
+      - 0
+      - -0.59379
+    visual:
+      Wheels_Right:
+        geometry:
+          filename: Object_4
+          scale:
+          - 1.0
+          - 1.0
+          - 1.0
+          size:
+          - 0.7229
+          - 6.40001
+          - 1.2042
+          type: mesh
+        material: Material_1.003
+        name: Wheels_Right
+        pose:
+          matrix:
+          - - 0
+            - -1.0
+            - 0
+            - 0
+          - - 0
+            - 0
+            - 1.0
+            - -0.47
+          - - -1.0
+            - 0
+            - 0
+            - -1.04
+          - - 0
+            - 0
+            - 0
+            - 1.0
+          rawmatrix: !!python/object:builtins.Matrix {}
+          rotation_euler:
+          - -1.5708
+          - 1.5708
+          - 0
+          rotation_quaternion:
+          - 0.5
+          - -0.5
+          - 0.5
+          - 0.5
+          translation:
+          - 0
+          - -0.47
+          - -1.04
+materials:
+  Material_1:
+    ambientColor:
+      b: 0.8
+      g: 0.8
+      r: 0.8
+    diffuseColor:
+      b: 0.8
+      g: 0.8
+      r: 0.8
+    name: Material_1
+    shininess: 25.0
+    specularColor:
+      b: 0
+      g: 0
+      r: 0
+    users: 2
+  Material_1.003:
+    ambientColor:
+      b: 0.8
+      g: 0.8
+      r: 0.8
+    diffuseColor:
+      b: 0.8
+      g: 0.8
+      r: 0.8
+    name: Material_1.003
+    shininess: 25.0
+    specularColor:
+      b: 0
+      g: 0
+      r: 0
+    users: 5
+meshes:
+  Object_1: !!python/object:bpy_types.Object {}
+  Object_1.001: !!python/object:bpy_types.Object {}
+  Object_1.002: !!python/object:bpy_types.Object {}
+  Object_1.003: !!python/object:bpy_types.Object {}
+  Object_2: !!python/object:bpy_types.Object {}
+  Object_3: !!python/object:bpy_types.Object {}
+  Object_4: !!python/object:bpy_types.Object {}
+motors:
+  motor:
+    joint: sag_teker
+    maxEffort: 50.0
+    maxSpeed: 10.161
+    name: motor
+  motor.001:
+    joint: sol_palet
+    maxEffort: 50.0
+    maxSpeed: 10.161
+    name: motor.001
+name: tank
+sensors: {}
+submechanisms: []
+version: undefined

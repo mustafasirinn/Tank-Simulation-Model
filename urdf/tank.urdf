@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="tank">
+
+    <link name="govde">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="9.511"/>
+        <inertia ixx="35.63729" ixy="-0.00598" ixz="0.0172" iyy="9.64041" iyz="-1.00546" izz="42.42702"/>
+      </inertial>
+      <visual name="Hull">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Object_1.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Material_1.003"/>
+      </visual>
+      <collision name="Hull">
+        <origin xyz="0.00268 -0.26888 0.28422" rpy="0 0 0"/>
+        <geometry>
+          <box size="3.75521 7.42093 1.62842"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="namlu">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="9.511"/>
+        <inertia ixx="159.77608" ixy="-0.00169" ixz="-0.32697" iyy="0.15212" iyz="-0.70765" izz="159.78377"/>
+      </inertial>
+      <visual name="Gun">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Object_1.003.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Material_1.003"/>
+      </visual>
+      <collision name="Gun">
+        <origin xyz="0 -3.23505 -0.01206" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="0.37102" length="6.41957"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="sag_palet">
+      <inertial>
+        <origin xyz="0 -0.47 -1.04" rpy="0 0 0"/>
+        <mass value="9.511"/>
+        <inertia ixx="16.01155" ixy="1.28381" ixz="-6.19351" iyy="42.58376" iyz="0.98101" izz="34.86257"/>
+      </inertial>
+      <visual name="Track_Left">
+        <origin xyz="0 -0.47 -1.04" rpy="-1.5708 -1.5708 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Object_1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Material_1"/>
+      </visual>
+      <collision name="Track_Left">
+        <origin xyz="-0.03436 0.21523 0.39328" rpy="-1.5708 -1.5708 0"/>
+        <geometry>
+          <box size="0.78867 6.60592 1.38052"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="sag_teker">
+      <inertial>
+        <origin xyz="0 -0.47 -1.04" rpy="0 0 0"/>
+        <mass value="9.511"/>
+        <inertia ixx="12.52509" ixy="0.01543" ixz="-4.48029" iyy="31.40427" iyz="-0.76543" izz="23.42209"/>
+      </inertial>
+      <visual name="Wheels_Left">
+        <origin xyz="0 -0.47 -1.04" rpy="-1.5708 -1.5708 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Object_3.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Material_1.003"/>
+      </visual>
+      <collision name="Wheels_Left">
+        <origin xyz="-0.05636 0.22491 0.27566" rpy="-1.5708 -1.5708 0"/>
+        <geometry>
+          <box size="0.73888 6.40001 1.2042"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="silah_bolumu">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="9.511"/>
+        <inertia ixx="11.37277" ixy="0.06555" ixz="0.0714" iyy="5.86534" iyz="-1.68641" izz="10.73085"/>
+      </inertial>
+      <visual name="Turret">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Object_1.002.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Material_1.003"/>
+      </visual>
+      <collision name="Turret">
+        <origin xyz="0.01295 -0.28332 0.60783" rpy="0 0 0"/>
+        <geometry>
+          <box size="2.61723 3.78731 1.22122"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="sol_palet">
+      <inertial>
+        <origin xyz="0 -0.47 -1.04" rpy="0 0 0"/>
+        <mass value="9.511"/>
+        <inertia ixx="15.99229" ixy="-1.29376" ixz="6.1697" iyy="42.69142" iyz="1.20956" izz="34.95319"/>
+      </inertial>
+      <visual name="Track_Right">
+        <origin xyz="0 -0.47 -1.04" rpy="-1.5708 1.5708 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Object_2.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Material_1"/>
+      </visual>
+      <collision name="Track_Right">
+        <origin xyz="0.03436 0.21523 0.39328" rpy="-1.5708 1.5708 0"/>
+        <geometry>
+          <box size="0.78867 6.60592 1.38052"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="sol_teker">
+      <inertial>
+        <origin xyz="0 -0.47 -1.04" rpy="0 0 0"/>
+        <mass value="9.511"/>
+        <inertia ixx="12.53724" ixy="-0.598" ixz="4.47881" iyy="31.32672" iyz="0.70665" izz="23.32156"/>
+      </inertial>
+      <visual name="Wheels_Right">
+        <origin xyz="0 -0.47 -1.04" rpy="-1.5708 1.5708 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Object_4.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Material_1.003"/>
+      </visual>
+      <collision name="Wheels_Right">
+        <origin xyz="0.05636 0.22491 0.27876" rpy="-1.5708 1.5708 0"/>
+        <geometry>
+          <box size="0.7229 6.40001 1.2042"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="namlu" type="fixed">
+      <origin xyz="0.06438 1.42959 0.39772" rpy="0 0 3.14159"/>
+      <parent link="silah_bolumu"/>
+      <child link="namlu"/>
+    </joint>
+
+    <joint name="sag_palet" type="continuous">
+      <origin xyz="-1.04 0 -0.59379" rpy="1.5708 0 -1.5708"/>
+      <parent link="govde"/>
+      <child link="sag_palet"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="4.38" velocity="2.07"/>
+    </joint>
+
+    <joint name="sag_teker" type="continuous">
+      <origin xyz="-1.04 0 -0.59379" rpy="1.5708 0 -1.5708"/>
+      <parent link="govde"/>
+      <child link="sag_teker"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="4.38" velocity="2.07"/>
+    </joint>
+
+    <joint name="silah_bolumu" type="revolute">
+      <origin xyz="0 -0.22787 0.8333" rpy="0 0 0"/>
+      <parent link="govde"/>
+      <child link="silah_bolumu"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.08" upper="1.08" effort="2.4" velocity="1.02"/>
+    </joint>
+
+    <joint name="sol_palet" type="continuous">
+      <origin xyz="1.04 0 -0.59379" rpy="1.5708 0 1.57079"/>
+      <parent link="govde"/>
+      <child link="sol_palet"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="4.38" velocity="2.07"/>
+    </joint>
+
+    <joint name="sol_teker" type="continuous">
+      <origin xyz="1.04 0 -0.59379" rpy="1.5708 0 1.57079"/>
+      <parent link="govde"/>
+      <child link="sol_teker"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="4.38" velocity="2.07"/>
+    </joint>
+
+    <material name="Material_1">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material_1.003">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+  </robot>

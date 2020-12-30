@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+<sdf version="1.5">
+  <model name="tank">
+    <link name="sol_teker">
+      <pose>-1.04 0 0.47 1.5708 0 -1.5708</pose>
+      <inertial>
+        <mass>9.511</mass>
+        <inertia>
+          <ixx>12.53724</ixx>
+          <ixy>-0.598</ixy>
+          <ixz>4.47881</ixz>
+          <iyy>31.32672</iyy>
+          <iyz>0.70665</iyz>
+          <izz>23.32156</izz>
+        </inertia>
+        <pose>0 -0.47 -1.04 0 0 0</pose>
+      </inertial>
+      <collision name="Wheels_Right">
+        <pose>0.05636 0.22491 0.27876 -1.5708 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.7229 6.40001 1.2042</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="Wheels_Right">
+        <pose>-4.545984211290488e-08 -0.4700000286102295 -1.0399999618530273 -1.5707963705062866 1.570796251296997 0.0</pose>
+        <material>
+          <ambient>0.8 0.8 0.8 1.0</ambient>
+          <diffuse>0.8 0.8 0.8 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://tank/meshes/Object_4.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="sag_teker">
+      <pose>1.04 0 0.47 1.5708 0 1.5708</pose>
+      <inertial>
+        <mass>9.511</mass>
+        <inertia>
+          <ixx>12.52509</ixx>
+          <ixy>0.01543</ixy>
+          <ixz>-4.48029</ixz>
+          <iyy>31.40427</iyy>
+          <iyz>-0.76543</iyz>
+          <izz>23.42209</izz>
+        </inertia>
+        <pose>0 -0.47 -1.04 0 0 0</pose>
+      </inertial>
+      <collision name="Wheels_Left">
+        <pose>-0.05636 0.22491 0.27566 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.73888 6.40001 1.2042</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="Wheels_Left">
+        <pose>4.545984211290488e-08 -0.4700000286102295 -1.0399999618530273 -1.5707963705062866 -1.570796251296997 0.0</pose>
+        <material>
+          <ambient>0.8 0.8 0.8 1.0</ambient>
+          <diffuse>0.8 0.8 0.8 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://tank/meshes/Object_3.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="sol_palet">
+      <pose>-1.04 0 0.47 1.5708 0 -1.5708</pose>
+      <inertial>
+        <mass>9.511</mass>
+        <inertia>
+          <ixx>15.99229</ixx>
+          <ixy>-1.29376</ixy>
+          <ixz>6.1697</ixz>
+          <iyy>42.69142</iyy>
+          <iyz>1.20956</iyz>
+          <izz>34.95319</izz>
+        </inertia>
+        <pose>0 -0.47 -1.04 0 0 0</pose>
+      </inertial>
+      <collision name="Track_Right">
+        <pose>0.03436 0.21523 0.39328 -1.5708 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.78867 6.60592 1.38052</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="Track_Right">
+        <pose>-4.545984211290488e-08 -0.4700000286102295 -1.0399999618530273 -1.5707963705062866 1.570796251296997 0.0</pose>
+        <material>
+          <ambient>0.8 0.8 0.8 1.0</ambient>
+          <diffuse>0.8 0.8 0.8 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://tank/meshes/Object_2.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="silah_bolumu">
+      <pose>0 0.22787 1.89709 0 0 -3.14159</pose>
+      <inertial>
+        <mass>9.511</mass>
+        <inertia>
+          <ixx>11.37277</ixx>
+          <ixy>0.06555</ixy>
+          <ixz>0.0714</ixz>
+          <iyy>5.86534</iyy>
+          <iyz>-1.68641</iyz>
+          <izz>10.73085</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Turret">
+        <pose>0.01295 -0.28332 0.60783 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.61723 3.78731 1.22122</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="Turret">
+        <pose>0.0 2.9802322387695312e-08 -2.384185791015625e-07 0.0 -0.0 -6.357299753290135e-08</pose>
+        <material>
+          <ambient>0.8 0.8 0.8 1.0</ambient>
+          <diffuse>0.8 0.8 0.8 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://tank/meshes/Object_1.002.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="sag_palet">
+      <pose>1.04 0 0.47 1.5708 0 1.5708</pose>
+      <inertial>
+        <mass>9.511</mass>
+        <inertia>
+          <ixx>16.01155</ixx>
+          <ixy>1.28381</ixy>
+          <ixz>-6.19351</ixz>
+          <iyy>42.58376</iyy>
+          <iyz>0.98101</iyz>
+          <izz>34.86257</izz>
+        </inertia>
+        <pose>0 -0.47 -1.04 0 0 0</pose>
+      </inertial>
+      <collision name="Track_Left">
+        <pose>-0.03436 0.21523 0.39328 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.78867 6.60592 1.38052</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="Track_Left">
+        <pose>4.545984211290488e-08 -0.47000008821487427 -1.0399999618530273 -1.5707963705062866 -1.570796251296997 0.0</pose>
+        <material>
+          <ambient>0.8 0.8 0.8 1.0</ambient>
+          <diffuse>0.8 0.8 0.8 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://tank/meshes/Object_1.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="namlu">
+      <pose>-0.06438 -1.20173 2.29482 0 0 0</pose>
+      <inertial>
+        <mass>9.511</mass>
+        <inertia>
+          <ixx>159.77608</ixx>
+          <ixy>-0.00169</ixy>
+          <ixz>-0.32697</ixz>
+          <iyy>0.15212</iyy>
+          <iyz>-0.70765</iyz>
+          <izz>159.78377</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Gun">
+        <pose>0 -3.23505 -0.01206 1.5708 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.37102</radius>
+            <length>6.41957</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="Gun">
+        <pose>0.0 -1.1920928955078125e-07 0.0 0.0 -0.0 0.0</pose>
+        <material>
+          <ambient>0.8 0.8 0.8 1.0</ambient>
+          <diffuse>0.8 0.8 0.8 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://tank/meshes/Object_1.003.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="govde">
+      <pose>0 0 1.06379 0 0 -3.14159</pose>
+      <inertial>
+        <mass>9.511</mass>
+        <inertia>
+          <ixx>35.63729</ixx>
+          <ixy>-0.00598</ixy>
+          <ixz>0.0172</ixz>
+          <iyy>9.64041</iyy>
+          <iyz>-1.00546</iyz>
+          <izz>42.42702</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Hull">
+        <pose>0.00268 -0.26888 0.28422 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>3.75521 7.42093 1.62842</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="Hull">
+        <pose>0.0 0.0 0.0 0.0 -0.0 -6.357299753290135e-08</pose>
+        <material>
+          <ambient>0.8 0.8 0.8 1.0</ambient>
+          <diffuse>0.8 0.8 0.8 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://tank/meshes/Object_1.001.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="revolute" name="sol_teker">
+      <parent>govde</parent>
+      <child>sol_teker</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower></lower>
+          <upper></upper>
+          <effort>4.38</effort>
+          <velocity>2.07</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint type="revolute" name="sag_teker">
+      <parent>govde</parent>
+      <child>sag_teker</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower></lower>
+          <upper></upper>
+          <effort>4.38</effort>
+          <velocity>2.07</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint type="revolute" name="sol_palet">
+      <parent>govde</parent>
+      <child>sol_palet</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower></lower>
+          <upper></upper>
+          <effort>4.38</effort>
+          <velocity>2.07</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint type="revolute" name="silah_bolumu">
+      <parent>govde</parent>
+      <child>silah_bolumu</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower>-1.08</lower>
+          <upper>1.08</upper>
+          <effort>2.4</effort>
+          <velocity>1.02</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint type="revolute" name="sag_palet">
+      <parent>govde</parent>
+      <child>sag_palet</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower></lower>
+          <upper></upper>
+          <effort>4.38</effort>
+          <velocity>2.07</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint type="fixed" name="namlu">
+      <parent>silah_bolumu</parent>
+      <child>namlu</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+    </joint>
+  </model>
+</sdf>
